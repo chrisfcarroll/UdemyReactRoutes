@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/fetch-posts.js'
   ],
   debug:true,
   devtool: 'source-map',
