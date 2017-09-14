@@ -2,10 +2,13 @@ module.exports = {
   entry: [
     './src/index.js'
   ],
+  debug:true,
+  devtool: 'source-map',
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    devtool: 'source-map'
   },
   module: {
     loaders: [{
@@ -21,6 +24,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    hot: true
   }
 };
